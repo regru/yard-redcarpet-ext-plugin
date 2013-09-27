@@ -1,5 +1,7 @@
 # YARD::Redcarpet::Ext
 
+[![Gem Version](https://badge.fury.io/rb/yard-redcarpet-ext.png)](http://badge.fury.io/rb/yard-redcarpet-ext)
+
 Enables Redcarpet extensions for YARD.
 
 ## Installation

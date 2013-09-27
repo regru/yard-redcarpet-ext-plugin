@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["akzhan.abdulin@gmail.com"]
   spec.description   = %q{Redcarpet extensions for YARD}
   spec.summary       = %q{Enable Redcarpet extensions for YARD projects}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/regru/yard-redcarpet-ext-plugin"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
