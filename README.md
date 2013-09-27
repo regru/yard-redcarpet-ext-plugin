@@ -19,9 +19,9 @@ Or install it yourself as:
 
 ## Usage
 
-Add `--plugin redcarpet-ext` option to your `.yardopts` or call yard with this option.
+Add `--plugin redcarpet-ext` option to your `.yardopts` or call `yard` with this option.
 
-Create new file named `.redcarpet-ext` and write there all needed Redcarpet extensions like tables.
+Create new file named `.yard_redcarpet_ext` with all needed Redcarpet extensions like tables separated by comma or newline.
 
 Another way to specify extensions is setting of YARD_REDCARPET_EXTS environment variable. Extensions should be separated by comma.
 
