@@ -30,6 +30,8 @@ Another way to specify extensions is setting of `YARD_REDCARPET_EXTS` environmen
 
 You must have `gem 'yard-redcarpet-ext'` string in your Gemfile or development dependency in gemspec if it exists.
 
+Redcarpet extensions listed at: https://github.com/vmg/redcarpet#and-its-like-really-simple-to-use
+
 ## Contributing
 
 1. Fork it
