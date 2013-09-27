@@ -1,7 +1,6 @@
 # YARD::Redcarpet::Ext
 
-Enables Redcarpet extensions 
-
+Enables Redcarpet extensions for YARD.
 
 ## Installation
 
