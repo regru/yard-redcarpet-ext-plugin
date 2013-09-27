@@ -24,13 +24,15 @@ Or install it yourself as:
 
 Add `--plugin redcarpet-ext` option to your `.yardopts` or call `yard` with this option.
 
-Create new file named `.yard_redcarpet_ext` with all needed Redcarpet extensions like tables separated by comma or newline.
+Create new file named `.yard_redcarpet_ext` with all needed Redcarpet extensions like `tables` separated by comma or newline.
 
 Another way to specify extensions is setting of `YARD_REDCARPET_EXTS` environment variable. Extensions should be separated by comma.
 
 You must have `gem 'yard-redcarpet-ext'` string in your Gemfile or development dependency in gemspec if it exists.
 
-Redcarpet extensions listed at: https://github.com/vmg/redcarpet#and-its-like-really-simple-to-use
+Allowed Redcarpet extensions listed at: https://github.com/vmg/redcarpet#and-its-like-really-simple-to-use
+
+By default YARD enable these ones: `no_intraemphasis`, `gh_blockcode`, `fenced_code`, `autolink`.
 
 ## Contributing
 
