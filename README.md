@@ -8,7 +8,9 @@ Enables Redcarpet extensions for YARD.
 
 Add this line to your application's Gemfile:
 
-    gem 'yard-redcarpet-ext'
+```ruby
+gem 'yard-redcarpet-ext'
+```
 
 And then execute:
 
@@ -24,7 +26,7 @@ Add `--plugin redcarpet-ext` option to your `.yardopts` or call `yard` with this
 
 Create new file named `.yard_redcarpet_ext` with all needed Redcarpet extensions like tables separated by comma or newline.
 
-Another way to specify extensions is setting of YARD_REDCARPET_EXTS environment variable. Extensions should be separated by comma.
+Another way to specify extensions is setting of `YARD_REDCARPET_EXTS` environment variable. Extensions should be separated by comma.
 
 You must have `gem 'yard-redcarpet-ext'` string in your Gemfile or development dependency in gemspec if it exists.
 
