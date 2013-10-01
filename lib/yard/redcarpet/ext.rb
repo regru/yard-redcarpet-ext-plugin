@@ -13,26 +13,38 @@ module YARD
         gh_blockcode
         fenced_code
         autolink
+        tables
       ].freeze
 
       def self.exts_from_config
         return []  unless File.readable?(CONFIG_FILE)
-        IO.read(CONFIG_FILE).split(/(?:\s*,\s*)|\n/).select { |ext| !ext.empty? }
+        IO.read(CONFIG_FILE).split(/(?:\s*,\s*)|\n/)
       end
 
       def self.exts_from_env
         val = ENV[ENV_VAR]
         return []  unless val
-        val.split(/\s*,\s*/).select { |ext| !ext.empty? }
+        val.split(/\s*,\s*/)
       end
 
       def self.redcarpet_exts
         @redcarpet_exts ||= begin
           exts = []
+          exts_to_remove = []
           exts += DEFAULT_REDCARPET_EXTS
           exts += exts_from_config
           exts += exts_from_env
-          exts.uniq.map { |ext| ext.to_sym }
+          exts = exts.uniq.select { |ext| !ext.empty? }
+          exts.each do |ext|
+            if ext =~ /\A\-(.+)\z/
+              exts_to_remove << $1
+            end
+          end          
+          exts.delete_if { |elem| elem =~ /\A\-/ }
+          exts_to_remove.each do |ext_to_remove|
+            exts.delete_if { |elem| elem == ext_to_remove }
+          end
+          exts.map { |ext| ext.to_sym }
         end
       end
 

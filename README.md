@@ -32,7 +32,11 @@ You must have `gem 'yard-redcarpet-ext'` string in your Gemfile or development d
 
 Allowed Redcarpet extensions listed at: https://github.com/vmg/redcarpet#and-its-like-really-simple-to-use
 
-By default YARD enable these ones: `no_intraemphasis`, `gh_blockcode`, `fenced_code`, `autolink`.
+By default `yard-redcarpet-ext` enable these ones: `no_intraemphasis`, `gh_blockcode`, `fenced_code`, `autolink` and `tables`.
+
+### Removing of extensions from the list
+
+Simply add extension to be removed to the list prefixed by minus sign, like `-tables`.
 
 ## Contributing
 
