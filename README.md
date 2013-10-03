@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/yard-redcarpet-ext.png)](http://badge.fury.io/rb/yard-redcarpet-ext)
 
-Enables Redcarpet extensions for YARD.
+Enables Redcarpet extensions for YARD. Tables enabled by default, as GitHub does.
 
 ## Installation
 
