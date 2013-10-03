@@ -4,6 +4,8 @@
 
 Enables Redcarpet extensions for YARD. Tables enabled by default, as GitHub does.
 
+This extension enabled on http://rubydoc.info/.
+
 ## Installation
 
 Add this line to your application's Gemfile:
