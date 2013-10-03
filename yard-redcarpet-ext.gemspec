@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Akzhan Abdulin"]
   spec.email         = ["akzhan.abdulin@gmail.com"]
   spec.description   = %q{Redcarpet extensions for YARD}
-  spec.summary       = %q{Enable Redcarpet extensions for YARD projects}
+  spec.summary       = %q{Enable Redcarpet extensions for YARD projects. Tables enabled by default.}
   spec.homepage      = "https://github.com/regru/yard-redcarpet-ext-plugin"
   spec.license       = "MIT"
 
